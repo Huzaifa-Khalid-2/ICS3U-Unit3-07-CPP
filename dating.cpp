@@ -13,20 +13,19 @@ int main() {
     // and depending on their answeres it tells if they can date
     // the grandchild
 
-    std::string user_looks;
-    std::string user_wealth;
-
+    std::string userLooks;
+    std::string userWealth;
 
     // input
     std::cout << "Are you rich?(yes or no): ";
-    std::cin >> user_wealth;
+    std::cin >> userWealth;
     std::cout << "Are you handsome?(yes or no): ";
-    std::cin >> user_looks;
+    std::cin >> userLooks;
 
     // process and output
-    if (user_wealth == "yes" || user_looks == "yes") {
+    if (userWealth == "yes" || userLooks == "yes") {
         std::cout << "\nYou can date the grandchild.";
-    } else if (user_wealth == "no" && user_looks == "no") {
+    } else if (userWealth == "no" && userLooks == "no") {
         std::cout << "\nYou can not date the grandchild.";
     } else {
         std::cout << "\nReally? (-_-)ゞ all you had to do was say yes or no.";
